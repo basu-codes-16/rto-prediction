@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/subhanjanbasu/iitd_rto/mlruns/435105557225621961/af6ecca52aeb496aa9669d33082a48a6/artifacts
+end_time: 1767681449676
+entry_point_name: ''
+experiment_id: '435105557225621961'
+lifecycle_stage: active
+run_id: af6ecca52aeb496aa9669d33082a48a6
+run_name: gradient_boosting
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1767681447623
+status: 3
+tags: []
+user_id: subhanjanbasu

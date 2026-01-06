@@ -1,0 +1,10 @@
+artifact_location: file:///Users/subhanjanbasu/iitd_rto/mlruns/435105557225621961/models/m-7a2bdaed1b73401f8ce456b4ad5ea72d/artifacts
+creation_timestamp: 1767681445794
+experiment_id: '435105557225621961'
+last_updated_timestamp: 1767681447612
+model_id: m-7a2bdaed1b73401f8ce456b4ad5ea72d
+model_type: null
+name: random_forest
+source_run_id: 28cf184d4c4047b5b08d5164f015a2c8
+status: 2
+status_message: null

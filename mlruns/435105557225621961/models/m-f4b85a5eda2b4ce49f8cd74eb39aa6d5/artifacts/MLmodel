@@ -1,0 +1,22 @@
+artifact_path: file:///Users/subhanjanbasu/iitd_rto/mlruns/435105557225621961/models/m-f4b85a5eda2b4ce49f8cd74eb39aa6d5/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.6
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.1.4
+model_id: m-f4b85a5eda2b4ce49f8cd74eb39aa6d5
+model_size_bytes: 97109
+model_uuid: m-f4b85a5eda2b4ce49f8cd74eb39aa6d5
+prompts: null
+run_id: af6ecca52aeb496aa9669d33082a48a6
+utc_time_created: '2026-01-06 06:37:27.737874'

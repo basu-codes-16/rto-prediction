@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/subhanjanbasu/iitd_rto/mlruns/435105557225621961/28cf184d4c4047b5b08d5164f015a2c8/artifacts
+end_time: 1767681447621
+entry_point_name: ''
+experiment_id: '435105557225621961'
+lifecycle_stage: active
+run_id: 28cf184d4c4047b5b08d5164f015a2c8
+run_name: random_forest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1767681445664
+status: 3
+tags: []
+user_id: subhanjanbasu

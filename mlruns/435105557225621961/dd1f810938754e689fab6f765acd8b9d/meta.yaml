@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/subhanjanbasu/iitd_rto/mlruns/435105557225621961/dd1f810938754e689fab6f765acd8b9d/artifacts
+end_time: 1767681445661
+entry_point_name: ''
+experiment_id: '435105557225621961'
+lifecycle_stage: active
+run_id: dd1f810938754e689fab6f765acd8b9d
+run_name: logistic_regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1767681442952
+status: 3
+tags: []
+user_id: subhanjanbasu

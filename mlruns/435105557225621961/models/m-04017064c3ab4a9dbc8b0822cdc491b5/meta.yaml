@@ -1,0 +1,10 @@
+artifact_location: file:///Users/subhanjanbasu/iitd_rto/mlruns/435105557225621961/models/m-04017064c3ab4a9dbc8b0822cdc491b5/artifacts
+creation_timestamp: 1767681451892
+experiment_id: '435105557225621961'
+last_updated_timestamp: 1767681453851
+model_id: m-04017064c3ab4a9dbc8b0822cdc491b5
+model_type: null
+name: lightgbm
+source_run_id: 19f529e6c7f3409db30b135fb5495cb2
+status: 2
+status_message: null

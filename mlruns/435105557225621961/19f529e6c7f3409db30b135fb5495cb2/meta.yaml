@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/subhanjanbasu/iitd_rto/mlruns/435105557225621961/19f529e6c7f3409db30b135fb5495cb2/artifacts
+end_time: 1767681453859
+entry_point_name: ''
+experiment_id: '435105557225621961'
+lifecycle_stage: active
+run_id: 19f529e6c7f3409db30b135fb5495cb2
+run_name: lightgbm
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1767681451703
+status: 3
+tags: []
+user_id: subhanjanbasu

@@ -1,0 +1,130 @@
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+  external_path: "data/external"
+  db_path: "data/rto_data.db"
+  
+  files:
+    meesho_orders: "meesho Orders Aug.csv"
+    meesho_forward: "meesho ForwardReports.csv"
+    dtdc: "Dataset_Generator_for_DTDC.csv"
+    delhivery: "delhivery_data.csv"
+    pincode: "pincode_database.csv"
+
+preprocessing:
+  missing_value_strategy:
+    order_date: "drop"
+    pin: "drop"
+    payment_mode: "unknown"
+    price: "median"
+  
+  date_columns:
+    - order_date
+    - date
+    - sender_date
+    - receive_date
+  
+  pincode_columns:
+    - pin
+    - sender_pincode
+    - receiver_pincode
+  
+  phone_columns:
+    - sender_phone
+    - recipient_phone
+
+features:
+  temporal:
+    - day_of_week
+    - hour_of_day
+    - is_weekend
+    - is_holiday
+    - month
+    - day_of_month
+  
+  geographic:
+    - pincode
+    - state
+    - is_metro
+    - distance_km
+    - pincode_rto_rate
+    - state_rto_rate
+  
+  transactional:
+    - payment_mode
+    - order_value
+    - cod_flag
+    - product_category
+    - quantity
+    - shipping_charges
+  
+  address:
+    - completeness_score
+    - has_landmark
+    - has_pincode
+    - has_building_number
+    - address_length
+  
+  courier:
+    - courier_name
+    - delivery_attempts
+    - weight_category
+
+model:
+  target: "is_rto"
+  test_size: 0.2
+  validation_size: 0.1
+  random_state: 42
+  
+  imbalance_strategy: "smote"  # Options: smote, class_weight, undersample, none
+  smote_sampling_strategy: 0.5  # Minority class ratio after SMOTE
+  
+  algorithms:
+    - name: "logistic_regression"
+      params:
+        max_iter: 1000
+        class_weight: "balanced"
+    
+    - name: "random_forest"
+      params:
+        n_estimators: 100
+        max_depth: 10
+        class_weight: "balanced"
+    
+    - name: "xgboost"
+      params:
+        n_estimators: 100
+        max_depth: 6
+        learning_rate: 0.1
+        scale_pos_weight: 3
+    
+    - name: "lightgbm"
+      params:
+        n_estimators: 100
+        max_depth: 6
+        learning_rate: 0.1
+        is_unbalance: true
+
+  evaluation_metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - roc_auc
+    - pr_auc
+
+mlflow:
+  experiment_name: "rto_prediction"
+  tracking_uri: "mlruns"
+  artifact_location: "mlruns"
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  model_path: "models/production/model.pkl"
+  preprocessor_path: "models/production/preprocessor.pkl"
+
+dashboard:
+  title: "RTO Prediction Dashboard"
+  page_icon: "📦"
+  layout: "wide"

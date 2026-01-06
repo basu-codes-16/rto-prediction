@@ -1,0 +1,10 @@
+artifact_location: file:///Users/subhanjanbasu/iitd_rto/mlruns/435105557225621961/models/m-f4b85a5eda2b4ce49f8cd74eb39aa6d5/artifacts
+creation_timestamp: 1767681447718
+experiment_id: '435105557225621961'
+last_updated_timestamp: 1767681449662
+model_id: m-f4b85a5eda2b4ce49f8cd74eb39aa6d5
+model_type: null
+name: gradient_boosting
+source_run_id: af6ecca52aeb496aa9669d33082a48a6
+status: 2
+status_message: null
