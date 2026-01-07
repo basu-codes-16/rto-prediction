@@ -2,6 +2,8 @@
 __pycache__/
 *.py[codz]
 *$py.class
+rto_venv/
+data/Assignment_RTO.pdf
 
 # C extensions
 *.so
